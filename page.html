@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>JustStreamIt</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="title">
+                <h1>JustStreamIt</h1>
+                <p>Plateforme de visionnage de films</p>
+            </div>
+            <nav>
+                <h2>Accueil</h2>
+                <h2>Catégories</h2>
+            </nav>
+        </header>
+        <section id="top-movie">
+                <article>
+                    <h1>Meilleur film du moment !</h1>
+                </article>
+                <aside class="movie" id="top-movie__poster">
+                </aside>
+                <aside class="top-movie__information">
+                </aside>
+        </section>
+        <div class="categories">
+            <section id="all_categories" class="category">
+                <h2>Films toutes catégories les mieux notés</h2>
+                <div class="category__best-movies">
+                    <div class="side-arrow left side-arrow--disable"  onclick='changeCategoryPosition("all_categories", "left")'>
+                        <p><</p>
+                    </div>
+                    <div class="category__best-movies__movies">
+                        <div class="movie" id="all_1">
+                            <article onclick='openModal("all_1")'>
+                                <h2>Film 1</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("all_1")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="all_2">
+                            <article onclick='openModal("all_2")'>
+                                <h2>Film 2</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <span class="close" onclick='closeModal("all_2")'>X</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="all_3">
+                            <article onclick='openModal("all_3")'>
+                                <h2>Film 3</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("all_3")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="all_4">
+                            <article onclick='openModal("all_4")'>
+                                <h2>Film 4</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("all_4")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="all_5">
+                            <article onclick='openModal("all_5")'>
+                                <h2>Film 5</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("all_5")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="all_6">
+                            <article onclick='openModal("all_6")'>
+                                <h2>Film 6</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("all_6")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="all_7">
+                            <article onclick='openModal("all_7")'>
+                                <h2>Film 7</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("all_7")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-arrow right"  onclick='changeCategoryPosition("all_categories", "right")'>
+                        <p>></p>
+                    </div>
+                </div>
+            </section>
+            <section id="action" class="category">
+                <h2>Films d'action les mieux notés</h2>
+                <div class="category__best-movies">
+                    <div class="side-arrow left side-arrow--disable"  onclick='changeCategoryPosition("action", "left")'>
+                        <p><</p>
+                    </div>
+                    <div class="category__best-movies__movies">
+                        <div class="movie" id="action_1">
+                            <article onclick='openModal("action_1")'>
+                                <h2>Film 1</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("action_1")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="action_2">
+                            <article onclick='openModal("action_2")'>
+                                <h2>Film 2</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("action_2")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="action_3">
+                            <article onclick='openModal("action_3")'>
+                                <h2>Film 3</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("action_3")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="action_4">
+                            <article onclick='openModal("action_4")'>
+                                <h2>Film 4</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("action_4")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="action_5">
+                            <article onclick='openModal("action_5")'>
+                                <h2>Film 5</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("action_5")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="action_6">
+                            <article onclick='openModal("action_6")'>
+                                <h2>Film 6</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("action_6")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="action_7">
+                            <article onclick='openModal("action_7")'>
+                                <h2>Film 7</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("action_7")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-arrow right"  onclick='changeCategoryPosition("action", "right")'>
+                        <p>></p>
+                    </div>
+                </div>
+            </section>
+            <section id="adventure" class="category">
+                <h2>Films d'aventure les mieux notés</h2>
+                <div class="category__best-movies">
+                    <div class="side-arrow left side-arrow--disable"  onclick='changeCategoryPosition("adventure", "left")'>
+                        <p><</p>
+                    </div>
+                    <div class="category__best-movies__movies">
+                        <div class="movie" id="adventure_1">
+                            <article onclick='openModal("adventure_1")'>
+                                <h2>Film 1</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("adventure_1")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="adventure_2">
+                            <article onclick='openModal("adventure_2")'>
+                                <h2>Film 2</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("adventure_2")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="adventure_3">
+                            <article onclick='openModal("adventure_3")'>
+                                <h2>Film 3</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("adventure_3")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="adventure_4">
+                            <article onclick='openModal("adventure_4")'>
+                                <h2>Film 4</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("adventure_4")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="adventure_5">
+                            <article onclick='openModal("adventure_5")'>
+                                <h2>Film 5</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("adventure_5")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="adventure_6">
+                            <article onclick='openModal("adventure_6")'>
+                                <h2>Film 6</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("adventure_6")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="adventure_7">
+                            <article onclick='openModal("adventure_7")'>
+                                <h2>Film 7</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("adventure_7")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-arrow right"  onclick='changeCategoryPosition("adventure", "right")'>
+                        <p>></p>
+                    </div>
+                </div>
+            </section>
+            <section id="horror" class="category">
+                <h2>Films d'horreur les mieux notés</h2>
+                <div class="category__best-movies">
+                    <div class="side-arrow left side-arrow--disable"  onclick='changeCategoryPosition("horror", "left")'>
+                        <p><</p>
+                    </div>
+                    <div class="category__best-movies__movies">
+                        <div class="movie" id="horror_1">
+                            <article onclick='openModal("horror_1")'>
+                                <h2>Film 1</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("horror_1")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="horror_2">
+                            <article onclick='openModal("horror_2")'>
+                                <h2>Film 2</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("horror_2")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="horror_3">
+                            <article onclick='openModal("horror_3")'>
+                                <h2>Film 3</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("horror_3")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="horror_4">
+                            <article onclick='openModal("horror_4")'>
+                                <h2>Film 4</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("horror_4")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="horror_5">
+                            <article onclick='openModal("horror_5")'>
+                                <h2>Film 5</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("horror_5")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="horror_6">
+                            <article onclick='openModal("horror_6")'>
+                                <h2>Film 6</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("horror_6")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="horror_7">
+                            <article onclick='openModal("horror_7")'>
+                                <h2>Film 7</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("horror_7")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-arrow right"  onclick='changeCategoryPosition("horror", "right")'>
+                        <p>></p>
+                    </div>
+                </div>
+            </section>
+            <section id="thriller" class="category">
+                <h2>Thrillers les mieux notés</h2>
+                <div class="category__best-movies">
+                    <div class="side-arrow left side-arrow--disable"  onclick='changeCategoryPosition("thriller", "left")'>
+                        <p><</p>
+                    </div>
+                    <div class="category__best-movies__movies">
+                        <div class="movie" id="thriller_1">
+                            <article onclick='openModal("thriller_1")'>
+                                <h2>Film 1</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("thriller_1")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="thriller_2">
+                            <article onclick='openModal("thriller_2")'>
+                                <h2>Film 2</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("thriller_2")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="thriller_3">
+                            <article onclick='openModal("thriller_3")'>
+                                <h2>Film 3</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("thriller_3")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie" id="thriller_4">
+                            <article onclick='openModal("thriller_4")'>
+                                <h2>Film 4</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("thriller_4")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="thriller_5">
+                            <article onclick='openModal("thriller_5")'>
+                                <h2>Film 5</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("thriller_5")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="thriller_6">
+                            <article onclick='openModal("thriller_6")'>
+                                <h2>Film 6</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("thriller_6")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie movie--hidden" id="thriller_7">
+                            <article onclick='openModal("thriller_7")'>
+                                <h2>Film 7</h2>
+                            </article>
+                            <aside class="movie__information">
+                            </aside>
+                            <div class="modal">
+                                <div>
+                                    <p></p>
+                                    <div class="close" onclick='closeModal("thriller_7")'>X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-arrow right"  onclick='changeCategoryPosition("thriller", "right")'>
+                        <p>></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script type="text/javascript" src="constants.js"></script>
+        <script type="text/javascript" src="page.js"></script>
+    </body>
+</html>
